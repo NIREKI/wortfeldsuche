@@ -16,7 +16,7 @@ public class App {
         tesseract.setDatapath("tessdata");
         tesseract.setLanguage("eng");
         tesseract.setPageSegMode(1);
-        tesseract.setOcrEngineMode(2);
+        tesseract.setOcrEngineMode(1);
         try {
             String result = tesseract.doOCR(image);
             result.replace("1", "l");
