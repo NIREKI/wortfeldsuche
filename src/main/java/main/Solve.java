@@ -30,7 +30,7 @@ public class Solve {
             String a = words.get(i);
             chars[i] = a.toCharArray();
         }
-        
+        //This part goes through the dictionary txt and saves it in a ArrayList
         File f = new File("en_US.txt");
         ArrayList<String> al = new ArrayList<String>();
         Scanner sc;
@@ -49,7 +49,8 @@ public class Solve {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-
+        //This part runs through every line of the array and checks from left to right for words. Needs to be turned around
+        //and also written that it displays words from top to bottom and bottom to top.
         for(char[] a : chars){
             for(int i = 1; i <= a.length; i++){
                 for(int j = 0; j < a.length; j++){
